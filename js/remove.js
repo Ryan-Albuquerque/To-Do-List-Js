@@ -1,20 +1,22 @@
-var b = document.querySelectorAll("button")
+var table = document.querySelector("table")
 
-var button = b[1]
+console.log(table)
+
 var exception = document.querySelector(".header")
 
-console.log(button);
+table.addEventListener("dblclick", function (event) {
+    event.preventDefault()
+    // console.log(event.target) //mostra quem foi clicado
 
-// button.addEventListener("click", function (event) {
-//     // console.log(event.target) //mostra quem foi clicado
+    // console.log(event.target.parentNode.textContent)
+    // console.log(exception.textContent)
 
-//     // console.log(event.target.parentNode.textContent)
-//     // console.log(exception.textContent)
-
-//     // if (event.target.parentNode == exception) {
-//     //     console.log("Cabeçalho não será removido baby")
-//     // }    
-//         event.target.parentNode.remove()
-// })
+    if (event.target.parentNode == exception) {
+        console.log("Cabeçalho não será removido baby")
+    }
+    else {
+        event.target.parentNode.remove()
+    }
+})
 
 

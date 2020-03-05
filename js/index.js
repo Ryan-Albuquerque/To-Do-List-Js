@@ -63,10 +63,3 @@ button.addEventListener("click", function (event) {
 
     
 })
-
-var b = document.querySelector(".button")
-
-b.addEventListener("click", function(event){
-    console.log("ola");
-    
-})
