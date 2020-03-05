@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 2% 0.5%;
+    background-color: rgb(153, 51, 153);
+}
+
+header h2,
+main{
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+form{
+    margin-top: 1.5%;
+}
+
+input{
+    display: block;
+    margin-bottom: 2% ;
+}
+
+button{
+    padding: 3.5%;
+    border-radius: 10px;
+    background-color: rgb(0, 231, 0);
+    color: white;
+    margin-top: 2%;
+}
+
+button:hover{
+    transition: 0.25s;
+    opacity: 0.9;
+    color: white;
+    font-weight: lighter;
+}
+
+table{
+    margin: 1.5% auto;
+    width: 50%;
+
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.header{
+    background-color: rgb(153, 51, 153);
+    color: white;
+}
+#nome,
+#num{
+    display: block;
+    font-size: large;
+    margin-top: 2%;
+}
+
+#label{
+    display: flex;
+    margin: 5% auto;
+}
+
+.urgente{
+    background-color: rgb(235, 76, 76);
+}
+
+.baixa{
+    background-color: rgb(241, 241, 56);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(153, 51, 153);
+    padding: 2% 0.5%;
+}
+
+.content{
+    color: white;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5% auto;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+
+.copy{
+    text-align: center;
+    margin: 0.5% auto;
+}
+
+/*Large Smartphones*/
+@media (max-width:425px){
+    main{
+        display: block;
+
+        margin: 0;
+        width: 100%;
+    }
+
+    form{
+        width: 80%;
+        margin: 7.5% auto;
+    }
+
+    table{
+        width: 90%;
+        margin: 7.5% auto;
+    }
+    
+}
+
+/*Medium Smartphone*/
+@media (max-width:375px){
+
+    table{
+        font-size: small;
+    }
+    
+}

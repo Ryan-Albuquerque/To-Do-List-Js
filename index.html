@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>To do List</h2>
+    </header>
+
+    <main>
+        <form>
+            <label id="nome">Atividade:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label id="num">Prioridade:</label>
+
+            <label id="label">
+                <input type="radio" name="num" value="Alta">
+                Urgente
+            </label>
+
+            <label id="label">
+                <input type="radio" name="num" value="Normal">
+                Normal
+            </label>
+
+            <label id="label">
+                <input type="radio" name="num" value="Baixa">
+                Baixa
+            </label>
+            <button type="submit">Cadastrar Atividade</button>
+        </form>
+        <table>
+            <tr class="header">
+                <td>Atividade</td>
+                <td>Prioridade</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <div class="content">
+            <div class="contact">
+                <i class="fa fa-whatsapp" aria-hidden="true">
+                    <a href="http://wa.me/5592991180239">Whatsapp</a>
+                </i>
+
+                <i class="fa fa-envelope">
+                    <a href="mailto:ryan.albuquerque2002@gmail.com">Email</a>
+                </i>
+
+                <i class="fa fa-linkedin" aria-hidden="true">
+                    <a href="http://linkedin.com/in/ryan-albuquerque">LinkedIn</a>
+                </i>
+            </div>
+            <div class="copy">
+                <h4>All Copyright Reserved &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                </h4>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./js/index.js"></script>
+<script src="./js/remove.js"></script>
+
+</html>
