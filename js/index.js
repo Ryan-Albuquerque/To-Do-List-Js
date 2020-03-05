@@ -1,5 +1,6 @@
 var button = document.querySelector("button")
 
+
 var form = document.querySelector("form")
 
 button.addEventListener("click", function (event) {
@@ -35,12 +36,18 @@ button.addEventListener("click", function (event) {
 
         var tdNome = document.createElement("td")
         var tdNumero = document.createElement("td")
+        var rm = document.createElement("button")
+
+        rm.classList.add("button")
+
+        rm.textContent="X"
 
         tdNome.textContent = dados.nome
         tdNumero.textContent = dados.numero
 
         tr.appendChild(tdNome)
         tr.appendChild(tdNumero)
+        tr.appendChild(rm)
 
         return tr
     }
@@ -53,4 +60,13 @@ button.addEventListener("click", function (event) {
         }
         return dados
     }
+
+    
+})
+
+var b = document.querySelector(".button")
+
+b.addEventListener("click", function(event){
+    console.log("ola");
+    
 })
