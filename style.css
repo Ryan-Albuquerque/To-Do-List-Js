@@ -88,11 +88,16 @@ footer{
     bottom: 0;
     width: 100%;
     background-color: rgb(153, 51, 153);
-    padding: 2% 0.5%;
+    padding: 1% 0.5%;
 }
 
 .content{
     color: white;
+}
+
+.content h4{
+    width: 75%;
+    margin: 1.5% auto;
 }
 
 .contact{
@@ -127,6 +132,11 @@ footer{
     table{
         width: 90%;
         margin: 7.5% auto;
+    }
+
+    .content h4{
+        width: 85%;
+        margin: 1.75% auto;
     }
     
 }
