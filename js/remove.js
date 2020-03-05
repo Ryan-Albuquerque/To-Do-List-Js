@@ -1,10 +1,10 @@
 var table = document.querySelector("table")
 
-console.log(table)
+//console.log(table)
 
 var exception = document.querySelector(".header")
 
-table.addEventListener("dblclick", function (event) {
+table.addEventListener("click", function (event) {
     event.preventDefault()
     // console.log(event.target) //mostra quem foi clicado
 

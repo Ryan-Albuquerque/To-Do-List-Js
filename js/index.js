@@ -36,18 +36,12 @@ button.addEventListener("click", function (event) {
 
         var tdNome = document.createElement("td")
         var tdNumero = document.createElement("td")
-        var rm = document.createElement("button")
-
-        rm.classList.add("button")
-
-        rm.textContent="X"
 
         tdNome.textContent = dados.nome
         tdNumero.textContent = dados.numero
 
         tr.appendChild(tdNome)
         tr.appendChild(tdNumero)
-        tr.appendChild(rm)
 
         return tr
     }
